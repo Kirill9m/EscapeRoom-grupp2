@@ -75,7 +75,7 @@ export const initializeStep2 = async (id, date) => {
     }
     await loadParticipants(challengeId);
     await loadAvailableTimes(challengeId, selectedDate);
-    showSteps(2); // Move to Step 2
+    await showSteps(2); // Move to Step 2
   } catch (err) {
     console.error('Error initializing Step 2:', err);
   }
